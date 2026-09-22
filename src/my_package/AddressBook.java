@@ -23,6 +23,11 @@ public class AddressBook {
          }
     }
 
-
+    public static void main(String[] args){
+         BodyInfo Tom = new BodyInfo("Tom");
+         AddressBook My_friend = new AddressBook();
+         My_friend.addBuddy(Tom);
+         My_friend.removeBuddy((Tom));
+    }
 
 }
