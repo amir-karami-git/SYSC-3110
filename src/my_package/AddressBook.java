@@ -1,0 +1,28 @@
+package my_package;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class AddressBook {
+    private List<BodyInfo> Buddies;
+
+     AddressBook(){
+        Buddies = new ArrayList<>();
+    }
+
+    public void addBuddy(BodyInfo new_buddy){
+         Buddies.add(new_buddy);
+    }
+
+    public void removeBuddy(BodyInfo old_buddy){
+         for(int i=0;i<Buddies.size();i++){
+             if (old_buddy.getName().equals(Buddies.get(i).getName())){
+                 Buddies.remove(i);
+                 return;
+             }
+         }
+    }
+
+
+
+}
