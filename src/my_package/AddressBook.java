@@ -14,6 +14,17 @@ public class AddressBook {
          Buddies.add(new_buddy);
     }
 
+
+
+
+
+
+
+
+
+
+
+    
     public void removeBuddy(BodyInfo old_buddy){
          for(int i=0;i<Buddies.size();i++){
              if (old_buddy.getName().equals(Buddies.get(i).getName())){
