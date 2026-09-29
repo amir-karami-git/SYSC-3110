@@ -12,19 +12,9 @@ public class AddressBook {
 
     public void addBuddy(BodyInfo new_buddy){
          Buddies.add(new_buddy);
+         System.out.println(new_buddy.getName());
     }
 
-
-
-
-
-
-
-
-
-
-
-    
     public void removeBuddy(BodyInfo old_buddy){
          for(int i=0;i<Buddies.size();i++){
              if (old_buddy.getName().equals(Buddies.get(i).getName())){
@@ -39,6 +29,7 @@ public class AddressBook {
          AddressBook My_friend = new AddressBook();
          My_friend.addBuddy(Tom);
          My_friend.removeBuddy((Tom));
+
     }
 
 }
