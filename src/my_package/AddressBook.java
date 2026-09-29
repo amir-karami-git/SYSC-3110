@@ -26,10 +26,11 @@ public class AddressBook {
 
     public static void main(String[] args){
          BodyInfo Tom = new BodyInfo("Tom");
+        BodyInfo Amir = new BodyInfo("Amir");
          AddressBook My_friend = new AddressBook();
          My_friend.addBuddy(Tom);
          My_friend.removeBuddy((Tom));
-
+         My_friend.addBuddy(Amir);
     }
 
 }
